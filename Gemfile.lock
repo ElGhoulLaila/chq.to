@@ -180,6 +180,8 @@ GEM
     reline (0.4.1)
       io-console (~> 0.5)
     ruby2_keywords (0.0.5)
+    shortener (0.5.5)
+      rails (>= 3.0.7)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -222,6 +224,7 @@ DEPENDENCIES
   importmap-rails
   puma (>= 5.0)
   rails (~> 7.1.2)
+  shortener (~> 0.5.5)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
