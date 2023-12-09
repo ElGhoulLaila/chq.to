@@ -1,4 +1,12 @@
-<%= form_with(model: user) do |form| %>
+<%= form_with(model: user) do |form|%>
+  <%= form.label :email,"Email: " %>
+  <%= form.text_field :email %>  
+  <%= form.label :name,"Nombre: " %>
+  <%= form.text_field :name %>
+  <%= form.label :password,"Contraseña (Max 10 caracteres): " %>
+  <%= form.password_field :password %>
+
+
   <% if user.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
@@ -15,3 +23,6 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+
+
